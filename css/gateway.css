@@ -1,0 +1,100 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Font */
+@font-face {
+    font-family: 'Saol Display Bold';
+    src: url('../Assets/Fonts/SaolDisplay-Bold.otf') format('opentype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Din Pro Light';
+    src: url('../Assets/Fonts/DINpro\ Light.ttf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+h1 {
+  font-size: 400px;
+  font-family: "Saol Display Bold";
+}
+
+h2 {
+  font-size: 30px;
+  font-family: "Saol Display Bold";
+}
+
+p {
+  font-size: 16px;
+  font-family: "Din Pro Light";
+}
+
+/* Flex containers */
+section .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 60px;
+  height: 100vh;;
+}
+
+.text {
+  max-width: 50%;
+}
+
+.text h2 {
+  margin-bottom: 20px;
+}
+
+/* Professional Development */
+.pd {
+  background-color: #33261e;
+  color: white;
+}
+
+/* Technical */
+.technical {
+  background-color: white;
+  color: #33261e;
+}
+
+/* Personal */
+.personal {
+  background-color: black;
+  color: #ffffff;
+}
+
+/* media query */
+@media (max-width:768px) {
+  section .container {
+    flex-direction: column;
+  }
+  
+  .text {
+  max-width: 100%;
+  }
+
+  section .container {
+    padding-top: 0px;
+    height: auto;
+  }
+  
+  h1 {
+    margin-bottom: 0px;
+  }
+
+  p {
+    padding-bottom: 30px;
+  }
+}
+
+@media (orientation: landscape) {
+  section .container {
+    height: auto;
+  }
+}

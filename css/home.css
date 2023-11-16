@@ -1,0 +1,149 @@
+/* Font */
+@font-face {
+  font-family: 'Saol Display Bold';
+  src: url('../Assets/Fonts/SaolDisplay-Bold.otf') format('opentype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Din Pro Light';
+  src: url('../Assets/Fonts/DINpro\ Light.ttf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-size: 16px;
+  background-color: #33261e;
+  color: black;
+}
+
+main {
+  background-image: url("../Assets/Background/BRWN/Background-vert\ 8x10.jpg");
+}
+
+/* Header */
+header {
+  display: flex;
+  align-items: center;
+  height: 100vh;
+}
+
+header .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* About Section */
+.about {
+  background: #fff;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.about h1 {
+  font-size: 90px;
+  color: #33261e;
+  font-family: "Saol Display Bold";
+}
+
+.about p {
+  color: #33261e;
+  font-family: "Din Pro Light";
+}
+
+.about .intro {
+  padding-bottom: 15px;
+}
+
+/* Flex container */
+.about .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Flex item */
+.about .image {
+  max-width: 50%;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+/* Flex item */
+.about .container .text {
+  padding-left: 30px;
+  padding-right: 60px;
+  width: 100%;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+/* Scroll section */
+/* Flex container */
+.scroll {
+  display: flex;
+  height: 360px;
+  padding: 20px;
+  align-items: center;
+}
+
+/* Content styling */
+.scroll a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 16px;
+  padding: 12px 20px;
+  background: #33261e;
+  border-radius: 6px;
+  transition: font-size .2s;
+  font-family: "Din Pro Light";
+}
+
+.scroll a:hover {
+  font-size: 14px;
+  padding: 10px 18px;
+}
+
+:root {
+  scroll-behavior: smooth;
+}
+
+/* Media query */
+@media (max-width:768px) {
+  header {
+    height: 70vh;
+  }
+
+  .about {
+    height: auto;
+  }
+
+  .about .container {
+    flex-direction: column;
+
+  }
+
+  .about .container .text {
+    padding-bottom: 0px;
+    padding-top: 60px;
+  }
+
+  .about .image {
+    padding-bottom: 60px;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 1024px) and (orientation: landscape) {
+  header {
+    height: 100vh;
+  }
+
+  .about {
+    height: auto;
+  }
+}

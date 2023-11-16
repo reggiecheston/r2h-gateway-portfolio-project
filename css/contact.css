@@ -1,0 +1,111 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Font */
+@font-face {
+    font-family: 'Saol Display Bold';
+    src: url('../Assets/Fonts/SaolDisplay-Bold.otf') format('opentype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Din Pro Light';
+    src: url('../Assets/Fonts/DINpro\ Light.ttf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Flex container: Contact */
+section .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: calc(100vh - 200px);
+}
+
+/* Flex Item: Contact Info */
+.container .info p {
+  padding-bottom: 30px;
+  font-family: "Din Pro Light";
+}
+
+.container .info h1 {
+  font-size: 50px;
+  padding-bottom: 30px;
+  font-family: "Saol Display Bold";
+}
+
+.container .info h2 {
+  font-size: 30px;
+  padding-bottom: 15px;
+  font-family: "Din Pro Light"
+}
+
+/* Flex Item: Contact Form */
+.container .form {
+  max-width: 50%;
+  font-family: "Din Pro Light";
+}
+
+input[type=text], select, textarea {
+  width: 100%; 
+  padding: 12px; 
+  border-radius: 4px; 
+  box-sizing: border-box;
+  margin-top: 6px; 
+  margin-bottom: 16px; 
+  resize: vertical;
+  font-family: "Din Pro Light";
+}
+
+/* Submit Button */
+input[type=submit] {
+  background-color: #33261e;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: "Din Pro Light";
+}
+
+input[type=submit]:hover {
+  background-color: #7a6f68;
+}
+
+section .container {
+  padding: 60px;
+}
+
+
+/* media query */
+@media (max-width:768px) {
+  section .container {
+    flex-direction: column;
+  }
+
+  .container .info {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  }
+
+  .container .form {
+    max-width: 100%;
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  section .container {
+    height: auto;
+  }
+}
+
+@media (orientation: landscape) {
+  section .container {
+    height: auto;
+  }
+}
